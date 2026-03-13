@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moat - Elite Financial Services</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/msuite white logo.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Didact+Gothic&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css?v=29">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Meta -->
+    <meta name="description"
+        content="Institutional Wealth Services. Precision. Power. Elegance. Experience the future of Moat.">
+</head>
+
+<body class="loading">
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="nav-links">
+                <a href="#hero">Home</a>
+                <a href="#service">We Serve</a>
+                <a href="#offerings">Offerings</a>
+                <a href="#challenges">Challenges</a>
+                <a href="#solution">Solution</a>
+                <a href="#horizontal">Case Studies</a>
+                <a href="#final" class="nav-cta">Contact</a>
+            </div>
+            <div class="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero hero-ref" id="hero"
+        style="background-image: url('assets/hero section backround (1).jpeg'); background-size: cover; background-position: center; flex-direction: column; justify-content: center; align-items: center; position: relative;">
+        <!-- Dark Overlay for readability -->
+        <div class="hero-overlay"
+            style="position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(7, 7, 7, 0.4) 0%, rgba(7, 7, 7, 0.6) 100%); z-index: 1;">
+        </div>
+
+        <div class="star-group" style="z-index: 2;">
+            <span class="star s1">✦</span>
+            <span class="star s2">✦</span>
+            <span class="star s3">✦</span>
+            <span class="star s4">✦</span>
+        </div>
+
+        <div class="hero-content"
+            style="z-index: 2; display: flex; flex-direction: column; align-items: center; justify-content: center; width: 100%; margin-top: -50px;">
+            <img src="assets/msuite white logo.png" alt="Msuite Logo" class="hero-center-logo"
+                style="width: clamp(200px, 30vw, 450px); max-width: 85%; object-fit: contain; filter: drop-shadow(0 0 20px rgba(0,0,0,0.5));">
+        </div>
+    </section>
+
+    <!-- What is Msuite Section -->
+    <section class="what-is-msuite" id="what-is-msuite"
+        style="min-height: 80vh; padding: 150px 0; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden;">
+        <div class="bg-text" style="top: 50%; transform: translateY(-50%); white-space: nowrap;">MSUITE</div>
+        <div class="container">
+            <div style="text-align: center; margin: 0 auto; max-width: 800px; position: relative; z-index: 1;">
+                <h2 class="section-title fade-in-text">
+                    <span class="title-dark" style="color: #fff;">MSuite</span>
+                </h2>
+                <p style="color: #a0a0a0; font-size: 1.2rem; line-height: 1.8; margin-top: 2rem;">
+                    Affluent and NRI families don't suffer from a lack of money. They suffer from fragmentation,
+                    complexity, and the absence of coordination. <strong>Msuite</strong> exists to change that —
+                    bringing institutional-grade structure, visibility, and governance to family wealth.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section (Who We Serve) -->
+    <section class="service" id="service"
+        style="padding: 100px 5%; background: var(--bg-primary); position: relative; border-top: 1px solid rgba(255,255,255,0.05);">
+        <div class="container"
+            style="max-width: 1000px; margin: 0 auto; display: flex; flex-direction: column; gap: 4rem;">
+
+            <!-- Intro Statement -->
+            <div style="text-align: center; margin: 0 auto; max-width: 800px; position: relative; z-index: 1;">
+                <h2 class="section-title fade-in-text">
+                    <span class="title-dark" style="color: #fff;">We</span>
+                    <span class="title-muted" style="color: var(--text-gold);">Serve</span>
+                </h2>
+                <p style="color: #a0a0a0; font-size: 1.2rem; line-height: 1.8; margin-top: 2rem;">
+                    <strong>MSuite</strong> Partners with Families Navigating Complexity across Capital, Jurisdictions &
+                    Generations.
+                </p>
+            </div>
+
+            <!-- Client Profiles -->
+            <!-- Client Profiles -->
+            <div
+                style="margin: 0 auto; max-width: 1000px; width: 100%; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 5rem; margin-top: 1rem;">
+                <div style="text-align: center; margin-bottom: 4rem;">
+                    <h3
+                        style="font-size: 1rem; color: var(--text-gold); text-transform: uppercase; letter-spacing: 4px; font-weight: 600; margin-bottom: 0.5rem;">
+                        Client Profiles
+                    </h3>
+                    <div style="height: 1px; width: 40px; background: var(--text-gold); margin: 0 auto;"></div>
+                </div>
+
+                <style>
+                    .client-profile-grid {
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                        gap: 2rem;
+                    }
+
+                    @media (max-width: 768px) {
+                        .client-profile-grid {
+                            grid-template-columns: 1fr;
+                        }
+                    }
+
+                    .profile-card {
+                        background: rgba(255, 255, 255, 0.02);
+                        border: 1px solid rgba(255, 255, 255, 0.05);
+                        padding: 3rem 2rem;
+                        border-radius: 12px;
+                        transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        text-align: center;
+                        position: relative;
+                        overflow: hidden;
+                    }
+
+                    .profile-card::before {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        background: linear-gradient(135deg, rgba(212, 166, 116, 0.1), transparent);
+                        opacity: 0;
+                        transition: opacity 0.4s ease;
+                        z-index: 0;
+                    }
+
+                    .profile-card:hover {
+                        transform: translateY(-8px);
+                        border-color: rgba(212, 166, 116, 0.3);
+                        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+                        background: rgba(255, 255, 255, 0.04);
+                    }
+
+                    .profile-card:hover::before {
+                        opacity: 1;
+                    }
+
+                    .profile-icon {
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 50%;
+                        background: rgba(212, 166, 116, 0.1);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-bottom: 1.5rem;
+                        color: var(--text-gold);
+                        position: relative;
+                        z-index: 1;
+                    }
+
+                    .profile-text {
+                        font-size: 1.15rem;
+                        color: #ffffff;
+                        line-height: 1.6;
+                        font-weight: 300;
+                        position: relative;
+                        z-index: 1;
+                    }
+                </style>
+
+                <div class="client-profile-grid">
+                    <div class="profile-card">
+                        <div class="profile-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                        </div>
+                        <span class="profile-text">High & Ultra High Net Worth Individuals & Families</span>
+                    </div>
+
+                    <div class="profile-card">
+                        <div class="profile-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                            </svg>
+                        </div>
+                        <span class="profile-text">Business Promoters & Founders</span>
+                    </div>
+
+                    <div class="profile-card">
+                        <div class="profile-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="2" y1="12" x2="22" y2="12"></line>
+                                <path
+                                    d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                                </path>
+                            </svg>
+                        </div>
+                        <span class="profile-text">NRI Families with India-linked Assets</span>
+                    </div>
+
+                    <div class="profile-card">
+                        <div class="profile-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+                                <rect x="9" y="9" width="6" height="6"></rect>
+                                <line x1="9" y1="1" x2="9" y2="4"></line>
+                                <line x1="15" y1="1" x2="15" y2="4"></line>
+                                <line x1="9" y1="20" x2="9" y2="23"></line>
+                                <line x1="15" y1="20" x2="15" y2="23"></line>
+                                <line x1="20" y1="9" x2="23" y2="9"></line>
+                                <line x1="20" y1="14" x2="23" y2="14"></line>
+                                <line x1="1" y1="9" x2="4" y2="9"></line>
+                                <line x1="1" y1="14" x2="4" y2="14"></line>
+                            </svg>
+                        </div>
+                        <span class="profile-text">Institutional & Corporate Clients</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <!-- Offerings Section -->
+    <section class="offerings" id="offerings">
+        <div class="bg-text">OFFERINGS</div>
+        <div class="container" style="text-align: center; position: relative; z-index: 1;">
+            <h2 class="section-title" style="margin-bottom: 2rem; font-size: clamp(3rem, 10vw, 8rem);">
+                Our <span style="color: var(--text-gold);">Offerings</span>
+            </h2>
+            <p
+                style="color: var(--text-secondary); max-width: 600px; margin: 0 auto 4rem auto; font-size: 1.1rem; line-height: 1.8;">
+                Explore our exclusive range of wealth management and advisory services crafted for elite institutions
+                and families.
+            </p>
+
+            <div class="offerings-grid">
+                <!-- Slide 1 -->
+                <div class="offering-slide"
+                    style="background-image: url('assets/mcapital-bg.png'); background-size: cover; background-position: center;">
+                    <div class="offering-content">
+                        <div class="offering-topic"><span class="topic-arrow">&raquo;</span> <span
+                                class="topic-m">m</span>Capital &rarr;</div>
+                        <h3>Investment Solutions</h3>
+                        <ul class="offering-list">
+                            <li>Portfolio Management Services</li>
+                            <li>Alternative Investment Funds</li>
+                            <li>Mutual Funds</li>
+                            <li>Private Equity & Venture Capital</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="offering-slide"
+                    style="background-image: url('assets/mstructure-bg.png'); background-size: cover; background-position: center;">
+                    <div class="offering-content">
+                        <div class="offering-topic"><span class="topic-arrow">&raquo;</span> <span
+                                class="topic-m">m</span>Structure &rarr;</div>
+                        <h3>Asset Restructuring & Consolidation</h3>
+                        <ul class="offering-list">
+                            <li>Restructuring & Consolidation of Scattered Assets across Banks, Advisors & Geographies
+                            </li>
+                            <li>Elimination of Redundant & Legacy Holdings</li>
+                            <li>Restructuring for Tax Efficiency, Succession Clarity & Legal Robustness</li>
+                            <li>Creation of a Single, Clear Family Balance Sheet</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="offering-slide"
+                    style="background-image: url('assets/mcontinuum-bg.png'); background-size: cover; background-position: center;">
+                    <div class="offering-content">
+                        <div class="offering-topic"><span class="topic-arrow">&raquo;</span> <span
+                                class="topic-m">m</span>Continuum &rarr;</div>
+                        <h3>Estate, Legacy & Succession Planning</h3>
+                        <ul class="offering-list">
+                            <li>Family Trust Creation</li>
+                            <li>Asset Restructuring & Valuation</li>
+                            <li>Next-Generation Readiness</li>
+                            <li>Tax-Efficient Wealth Transfer</li>
+                            <li>Comprehensive Estate Structuring</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Slide 4 -->
+                <div class="offering-slide"
+                    style="background-image: url('assets/madvisory-bg.png'); background-size: cover; background-position: center;">
+                    <div class="offering-content">
+                        <div class="offering-topic"><span class="topic-arrow">&raquo;</span> <span
+                                class="topic-m">m</span>Advisory &rarr;</div>
+                        <h3>Tax & Legal Advisory</h3>
+                        <ul class="offering-list">
+                            <li>Integrated Tax Structuring</li>
+                            <li>Regulatory & Compliance Oversight</li>
+                            <li>Legal Structuring & Entity Formation</li>
+                            <li>Transaction Advisory & Documentation</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Slide 5 -->
+                <div class="offering-slide"
+                    style="background-image: url('assets/mborderless-bg.png'); background-size: cover; background-position: center;">
+                    <div class="offering-content">
+                        <div class="offering-topic"><span class="topic-arrow">&raquo;</span> <span
+                                class="topic-m">m</span>Borderless &rarr;</div>
+                        <h3>NRI & Cross-border Solutions</h3>
+                        <ul class="offering-list">
+                            <li>Residency & Tax Transition Planning</li>
+                            <li>Global Asset Consolidation</li>
+                            <li>Nominee Support System</li>
+                            <li>Land & Machinery Management</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Slide 6 -->
+                <div class="offering-slide"
+                    style="background-image: url('assets/mconsole-bg.png'); background-size: cover; background-position: center;">
+                    <div class="offering-content">
+                        <div class="offering-topic"><span class="topic-arrow">&raquo;</span> <span
+                                class="topic-m">m</span>Console &rarr;</div>
+                        <h3>Wealth Console</h3>
+                        <ul class="offering-list">
+                            <li>Advanced wealth interface providing real-time analytics</li>
+                            <li>Consolidated reporting</li>
+                            <li>Single-point institutional oversight</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Architecture Section -->
+    <section class="architecture" id="architecture">
+        <div class="bg-text">WEALTH</div>
+        <div class="container" style="max-width: 1300px;">
+            <!-- Challenge Section -->
+            <div class="arch-header" id="challenges" style="text-align: center; margin-bottom: 4rem;">
+                <h2 class="section-title arch-title"
+                    style="text-align: center !important; font-size: clamp(3rem, 8vw, 6rem); line-height: 1.1; margin-bottom: 1.5rem;">
+                    <span style="color: var(--text-gold);">The Challenge</span> <br>
+                    Modern Family Wealth
+                </h2>
+                <p style="color: var(--text-secondary); max-width: 600px; margin: 1rem auto; font-size: 1.1rem;">
+                    Fragmented Holdings. Disconnected Advisors. Lack of Integrated Governance
+                </p>
+            </div>
+
+            <div class="challenge-grid">
+                <!-- Challenge 1 -->
+                <div class="challenge-card feature-panel">
+                    <div class="challenge-icon">
+                        <i class="fa-solid fa-network-wired"></i>
+                    </div>
+                    <h3>Complexity & Fragmentation</h3>
+                    <p>Siloed Investments & Disparate Reporting across multiple platforms and advisors.</p>
+                </div>
+
+                <!-- Challenge 2 -->
+                <div class="challenge-card feature-panel">
+                    <div class="challenge-icon">
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                    </div>
+                    <h3>Risk & Vulnerability</h3>
+                    <p>Tax, Regulatory & Succession Vulnerabilities stemming from uncoordinated planning.</p>
+                </div>
+
+                <!-- Challenge 3 -->
+                <div class="challenge-card feature-panel">
+                    <div class="challenge-icon">
+                        <i class="fa-solid fa-gears"></i>
+                    </div>
+                    <h3>Lack of Alignment</h3>
+                    <p>Inter-generational & Governance Gaps that threaten long-term wealth preservation.</p>
+                </div>
+            </div>
+
+            <div class="risk-banner">
+                <h4>The Real Risk: Structural Disintegration</h4>
+            </div>
+
+            <div style="height: 1px; background: rgba(255,255,255,0.05); margin: 6rem 0;"></div>
+
+            <!-- Solution Section -->
+            <div class="solution-header-wrap" id="solution" style="text-align: center;">
+                <span class="section-label">The Solution</span>
+                <h2 class="section-title arch-title" style="text-align: center !important;">
+                    <span style="color: var(--text-gold);">M</span>suite
+                </h2>
+                <p style="color: var(--text-secondary); max-width: 600px; margin: 1rem auto; font-size: 1.1rem;">
+                    Unified Strategy. Institutional Oversight. Sustainable Legacy Stewardship
+                </p>
+            </div>
+
+            <div class="solution-grid">
+                <div class="solution-arc-wrap">
+                    <svg width="100%" height="100%" viewBox="0 0 1000 150" fill="none" preserveAspectRatio="none">
+                        <path d="M50,150 Q500,0 950,150" stroke="rgba(212, 166, 116, 0.2)" stroke-width="2"
+                            fill="none" />
+                        <circle cx="500" cy="10" r="15" fill="var(--text-gold)" opacity="0.5" />
+                    </svg>
+                </div>
+
+                <!-- Solution 1 -->
+                <div class="solution-card">
+                    <div class="sol-icon-wrap">
+                        <i class="fa-solid fa-chess-knight fa-2x"></i>
+                    </div>
+                    <h3>Integrated Wealth Strategy</h3>
+                    <p>Personalized Governance & Strategic Wealth Planning tailored to your family's unique needs.</p>
+                </div>
+
+                <!-- Solution 2 -->
+                <div class="solution-card" style="margin-top: -30px;">
+                    <div class="sol-icon-wrap">
+                        <i class="fa-solid fa-chart-pie fa-2x"></i>
+                    </div>
+                    <h3>Centralised Reporting Hub</h3>
+                    <p>Real-time, holistic visibility & unified intelligence across all your holdings worldwide.</p>
+                </div>
+
+                <!-- Solution 3 -->
+                <div class="solution-card" style="margin-top: -30px;">
+                    <div class="sol-icon-wrap">
+                        <i class="fa-solid fa-users-gear fa-2x"></i>
+                    </div>
+                    <h3>Interdisciplinary Expertise</h3>
+                    <p>Coordinated Oversight Across Advisors & Jurisdictions for seamless execution.</p>
+                </div>
+
+                <!-- Solution 4 -->
+                <div class="solution-card">
+                    <div class="sol-icon-wrap">
+                        <i class="fa-solid fa-scroll fa-2x"></i>
+                    </div>
+                    <h3>Legacy & Succession Planning</h3>
+                    <p>Sustainable Family Governance & Generational Guidance to secure your family's future.</p>
+                </div>
+            </div>
+
+            <div class="solution-banner">
+                <h4>Comprehensive. Coordinated. Institutional-Grade Family Office Oversight</h4>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Horizontal Scroll Section -->
+    <section class="horizontal-scroll" id="horizontal">
+        <div class="scroll-track">
+            <div class="scroll-panel" id="cs-panel-1">
+                <div class="panel-flipper">
+                    <div class="panel-front">
+                        <div class="panel-num">01</div>
+                        <h3 style="font-style: italic; font-size: 1.8rem; margin-bottom: 0.5rem;"><span
+                                style="font-weight: 900;">Case Study 1 :</span> <span style="font-weight: 600;">Asset
+                                Restructuring & Consolidation</span></h3>
+                        <p style="font-size: 1.1rem; color: var(--text-primary);">Individual Investor | Multi-Broker
+                            Asset
+                            Consolidation</p>
+                        <div class="flip-hint">Click to flip &rarr;</div>
+                    </div>
+                    <div class="panel-back">
+                        <h3>Strategy & Outcome</h3>
+                        <ul class="cs-detail-list">
+                            <li>Re-established contact with all brokers and consolidated financial assets.</li>
+                            <li>Dematerialised physical share certificates into unified digital holdings.</li>
+                            <li>Standardised KYC and resolved name inconsistencies across all platforms.</li>
+                            <li><strong>Outcome:</strong> Unified portfolio visibility and 100% compliance.</li>
+                        </ul>
+                        <div class="flip-hint">&larr; Click to return</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scroll-panel" id="cs-panel-2">
+                <div class="panel-flipper">
+                    <div class="panel-front">
+                        <div class="panel-num">02</div>
+                        <h3 style="font-style: italic; font-size: 1.8rem; margin-bottom: 0.5rem;"><span
+                                style="font-weight: 900;">Case Study 2 :</span> <span
+                                style="font-weight: 600;">Fragmented
+                                Family Wealth Across Advisors</span></h3>
+                        <p style="font-size: 1.1rem; color: var(--text-primary);">Family Office | Multi-Advisor
+                            Portfolio
+                            Governance</p>
+                        <div class="flip-hint">Click to flip &rarr;</div>
+                    </div>
+                    <div class="panel-back">
+                        <h3>Our Intervention</h3>
+                        <ul class="cs-detail-list">
+                            <li>Established a Central Family Office structure for unified oversight.</li>
+                            <li>Implemented a Long-term Capital Allocation Framework.</li>
+                            <li>Integrated risk exposure assessment across all family asset classes.</li>
+                            <li><strong>Outcome:</strong> Single-point accountability and institutional-grade
+                                governance.</li>
+                        </ul>
+                        <div class="flip-hint">&larr; Click to return</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scroll-panel" id="cs-panel-3">
+                <div class="panel-flipper">
+                    <div class="panel-front">
+                        <div class="panel-num">03</div>
+                        <h3 style="font-style: italic; font-size: 1.8rem; margin-bottom: 0.5rem;"><span
+                                style="font-weight: 900;">Case Study 3 :</span> <span
+                                style="font-weight: 600;">Accounting
+                                Complexity for HNIs</span></h3>
+                        <p style="font-size: 1.1rem; color: var(--text-primary);">HNI | Global Accounting & Tax
+                            Compliance</p>
+                        <div class="flip-hint">Click to flip &rarr;</div>
+                    </div>
+                    <div class="panel-back">
+                        <h3>Solutions Delivered</h3>
+                        <ul class="cs-detail-list">
+                            <li>AI-Powered Multi-Currency Reconciliation across 5+ jurisdictions.</li>
+                            <li>Real-time Tax Liability forecasting and integrated compliance tracking.</li>
+                            <li>Unified Global Ledger implementation for complete cash flow visibility.</li>
+                            <li><strong>Outcome:</strong> 85% reduction in reconciliation time and optimized costs.</li>
+                        </ul>
+                        <div class="flip-hint">&larr; Click to return</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer Section -->
+    <footer class="site-footer" id="final">
+        <div class="footer-container">
+            <!-- Left Column -->
+            <div class="footer-col footer-about">
+                <a href="#hero" class="footer-logo-link">
+                    <img src="assets/msuite white logo.png" alt="Msuite" class="footer-logo">
+                </a>
+                <p>Let us bring structure, visibility, and purpose to your family's wealth — across every generation.
+                </p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/moat.india?igsh=MW1mN3djN3EyMTgzaw==" target="_blank"
+                        rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@Moat_India" target="_blank" rel="noopener noreferrer"><i
+                            class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.linkedin.com/company/moat-financial-services-pvt-ltd" target="_blank"
+                        rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://x.com/moat_financials" target="_blank" rel="noopener noreferrer"><i
+                            class="fa-brands fa-x-twitter"></i></a>
+                </div>
+            </div>
+
+            <!-- Middle Column -->
+            <div class="footer-col footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#offerings">Offerings</a></li>
+                    <li><a href="#architecture">Architecture</a></li>
+                </ul>
+            </div>
+
+            <!-- Right Column -->
+            <div class="footer-col footer-contact">
+                <h4>Get in Touch</h4>
+                <div class="contact-item">
+                    <strong>Head office:</strong>
+                    <span>3rd Floor, National Pearl Star,<br>Behind Changampuzha Park Metro Station,
+                        Edappally,<br>Kochi, Kerala, 682024</span>
+                </div>
+                <div class="contact-item">
+                    <strong>Email:</strong>
+                    <a href="mailto:msuite@moatindia.com">msuite@moatindia.com</a>
+                </div>
+                <div class="contact-item">
+                    <strong>Phone:</strong>
+                    <a href="tel:+919961729290">+91 99617 29290</a>
+                    <a href="tel:+919895590168">+91 98955 90168</a>
+                </div>
+
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 MOAT Investments. All rights reserved.</p>
+            <a href="https://www.instagram.com/intellex.web?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                class="dev-link" target="_blank" rel="noopener noreferrer">Meet the Developers <i
+                    class="fa-brands fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <!-- Lenis -->
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+
+    <script src="script.js?v=40"></script>
+</body>
+
+</html>

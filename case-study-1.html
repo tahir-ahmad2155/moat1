@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moat - Case Study 1</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/msuite white logo.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Didact+Gothic&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css?v=29">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Meta -->
+    <meta name="description" content="Case Study 1: Asset Restructuring & Consolidation">
+    <style>
+        .case-study-section {
+            padding: 12rem 5% 5rem;
+            min-height: 100vh;
+            background: var(--bg-primary);
+        }
+
+        .cs-header {
+            text-align: center;
+            margin-bottom: 4rem;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeUp 1s ease forwards;
+        }
+
+        .cs-title {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            color: var(--text-gold);
+            margin-bottom: 1rem;
+            font-style: italic;
+            font-weight: 800;
+        }
+
+        .cs-subtitle {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+        }
+
+        .cs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2.5rem;
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+
+        .cs-card {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: var(--radius-lg);
+            padding: 2.5rem;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeUp 1s ease forwards;
+        }
+
+        .cs-card:nth-child(1) {
+            animation-delay: 0.2s;
+        }
+
+        .cs-card:nth-child(2) {
+            animation-delay: 0.4s;
+        }
+
+        .cs-card:nth-child(3) {
+            animation-delay: 0.6s;
+        }
+
+        @keyframes fadeUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .cs-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(212, 166, 116, 0.3);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .cs-card h2 {
+            font-size: 1.8rem;
+            color: var(--text-gold);
+            margin-bottom: 2rem;
+            padding-bottom: 0.8rem;
+            border-bottom: 1px solid rgba(212, 166, 116, 0.2);
+            font-style: italic;
+        }
+
+        .cs-card h3 {
+            font-size: 1.3rem;
+            color: #ffffff;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 500;
+        }
+
+        .cs-card h3:first-of-type {
+            margin-top: 0;
+        }
+
+        .cs-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .cs-list li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 1.2rem;
+            color: var(--text-secondary);
+            font-size: 1.05rem;
+            line-height: 1.6;
+        }
+
+        .cs-list li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: var(--text-gold);
+            font-size: 1.5rem;
+            top: -5px;
+        }
+    </style>
+</head>
+
+<body style="opacity: 1;">
+
+    <!-- Navigation -->
+    <nav class="nav nav-scrolled" style="background: var(--bg-primary); padding: 1rem 5%;">
+        <div class="nav-container">
+
+            <div class="nav-links" style="display: flex; align-items: center;">
+                <a href="index.html#hero">Home</a>
+                <a href="index.html#horizontal">Case Studies</a>
+                <a href="#final">Contact</a>
+            </div>
+            <div class="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section class="case-study-section">
+        <div class="cs-header">
+            <h1 class="cs-title">Case Study 1: Asset Restructuring & Consolidation</h1>
+            <p class="cs-subtitle">Individual Investor | Multi-Broker Asset Consolidation</p>
+        </div>
+
+        <div class="cs-grid">
+            <!-- Col 1 -->
+            <div class="cs-card">
+                <h2>Client Snapshot</h2>
+
+                <h3>Profile</h3>
+                <ul class="cs-list">
+                    <li>Individual investor with scattered and overdiversified portfolio</li>
+                    <li>Assets accumulated over multiple years</li>
+                </ul>
+
+                <h3>Asset Spread</h3>
+                <ul class="cs-list">
+                    <li>Holdings across multiple brokers and platforms</li>
+                    <li>Physical share certificates (paper shares)</li>
+                    <li>Mix of equity investments and mutual funds</li>
+                    <li>Demat and non-demat holdings</li>
+                </ul>
+
+                <h3>Key Issue</h3>
+                <ul class="cs-list">
+                    <li>Lost contact points with several brokers</li>
+                    <li>Name discrepancies in client database Records</li>
+                    <li>Lack unified portfolio visibility</li>
+                </ul>
+            </div>
+
+            <!-- Col 2 -->
+            <div class="cs-card">
+                <h2>The Challenge</h2>
+                <ul class="cs-list" style="margin-top: 1rem;">
+                    <li>Assets are scattered across different brokers, with lost points of contact</li>
+                    <li>Name errors and inconsistencies in the client database across platforms</li>
+                    <li>Physical share certificates requiring dematerialisation</li>
+                    <li>No consolidated view of the total portfolio</li>
+                    <li>Difficulty in tracking performance and managing assets effectively</li>
+                    <li>KYC compliance issues due to name mismatches</li>
+                </ul>
+            </div>
+
+            <!-- Col 3 -->
+            <div class="cs-card">
+                <h2>The Msuite Approach</h2>
+
+                <h3>Asset Consolidation</h3>
+                <ul class="cs-list">
+                    <li>Re-established contact with all brokers</li>
+                    <li>Consolidated financial assets from multiple sources and built a character for the portfolio</li>
+                    <li>Dematerialised physical share certificates</li>
+                </ul>
+
+                <h3>KYC Completion & Compliance</h3>
+                <ul class="cs-list">
+                    <li>Completed KYC process on behalf of the client</li>
+                    <li>Resolved name discrepancies across all platforms</li>
+                    <li>Standardised client information across brokers</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="site-footer" id="final" style="margin-top: 0; padding-top: 4rem;">
+        <div class="footer-container">
+            <!-- Left Column -->
+            <div class="footer-col footer-about">
+                <a href="index.html" class="footer-logo-link">
+                    <img src="assets/msuite white logo.png" alt="Msuite" class="footer-logo">
+                </a>
+                <p>Let us bring structure, visibility, and purpose to your family's wealth — across every generation.
+                </p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><img
+                            src="assets/instagram.jpeg" alt="Instagram"></a>
+                    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><img
+                            src="assets/facebook.jpeg" alt="Facebook"></a>
+                    <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"><img
+                            src="assets/linkedin.jpeg" alt="LinkedIn"></a>
+                    <a href="https://x.com/" target="_blank" rel="noopener noreferrer"><img src="assets/x.jpeg"
+                            alt="X"></a>
+                </div>
+            </div>
+
+            <!-- Middle Column -->
+            <div class="footer-col footer-links">
+                <h4>Platform</h4>
+                <a href="#">MSuite Engine</a>
+                <a href="#">Security Model</a>
+                <a href="#">Case Studies</a>
+                <a href="#">API Docs</a>
+            </div>
+
+            <!-- Right Column -->
+            <div class="footer-col footer-contact">
+                <h4>Contact</h4>
+                <div class="-item">
+                    <strong>Email:</strong>
+                    <a href="mailto:info@moatinstitute.in">info@moatinstitute.in</a>
+                </div>
+                <div class="-item">
+                    <strong>Phone:</strong>
+                    <a href="tel:+918590144794">+91 8590 144 794</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 MOAT Investments. All rights reserved.</p>
+            <a href="https://www.instagram.com/intellex.web?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                class="dev-link" target="_blank" rel="noopener noreferrer">Meet the Developers <i
+                    class="fa-brands fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <!-- Lenis -->
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+    <script src="script.js?v=40"></script>
+</body>
+
+</html>

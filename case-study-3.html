@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moat - Case Study 3</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/msuite white logo.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Didact+Gothic&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css?v=29">
+
+    <!-- Meta -->
+    <meta name="description" content="Case Study 3: Accounting Complexity for HNIs">
+    <style>
+        .case-study-section {
+            padding: 12rem 5% 4rem;
+            min-height: 100vh;
+            background: var(--bg-primary);
+        }
+
+        .cs-header {
+            text-align: center;
+            margin-bottom: 4rem;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeUp 1s ease forwards;
+        }
+
+        .cs-title {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            color: var(--text-gold);
+            margin-bottom: 1rem;
+            font-style: italic;
+            font-weight: 800;
+        }
+
+        .cs-subtitle {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+        }
+
+        .cs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2.5rem;
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+
+        .cs-card {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: var(--radius-lg);
+            padding: 2.5rem;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeUp 1s ease forwards;
+        }
+
+        .cs-card:nth-child(1) {
+            animation-delay: 0.2s;
+        }
+
+        .cs-card:nth-child(2) {
+            animation-delay: 0.4s;
+        }
+
+        .cs-card:nth-child(3) {
+            animation-delay: 0.6s;
+        }
+
+        @keyframes fadeUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .cs-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(212, 166, 116, 0.3);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .cs-card h2 {
+            font-size: 1.8rem;
+            color: var(--text-gold);
+            margin-bottom: 2rem;
+            padding-bottom: 0.8rem;
+            border-bottom: 1px solid rgba(212, 166, 116, 0.2);
+            font-style: italic;
+        }
+
+        .cs-card h3 {
+            font-size: 1.3rem;
+            color: #ffffff;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-weight: 500;
+        }
+
+        .cs-card h3:first-of-type {
+            margin-top: 0;
+        }
+
+        .cs-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .cs-list li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-secondary);
+            font-size: 1.05rem;
+            line-height: 1.5;
+        }
+
+        .cs-list li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: var(--text-gold);
+            font-size: 1.5rem;
+            top: -5px;
+        }
+
+        .nested-list {
+            padding-left: 1.5rem;
+            margin-top: 0.5rem;
+            list-style: none;
+        }
+
+        .nested-list li {
+            font-size: 0.95rem;
+            margin-bottom: 0.6rem !important;
+        }
+
+        .outcome-banner {
+            max-width: 1300px;
+            margin: 4rem auto 0;
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(212, 166, 116, 0.2);
+            border-radius: 15px;
+            padding: 2.5rem;
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeUp 1s ease forwards;
+            animation-delay: 0.8s;
+        }
+
+        .outcome-title {
+            font-size: 2.2rem;
+            color: var(--text-gold);
+            font-style: italic;
+            font-weight: 800;
+            min-width: max-content;
+            padding-right: 3rem;
+            border-right: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .outcome-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            flex-grow: 1;
+        }
+
+        .outcome-item {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.8rem;
+        }
+
+        .outcome-item i {
+            font-size: 2rem;
+            color: var(--text-gold);
+        }
+
+        .outcome-item p {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            line-height: 1.3;
+            font-weight: 500;
+        }
+
+        @media (max-width: 1024px) {
+            .outcome-banner {
+                flex-direction: column;
+                text-align: center;
+                gap: 2rem;
+            }
+
+            .outcome-title {
+                border-right: none;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+                padding-right: 0;
+                padding-bottom: 1rem;
+                width: 100%;
+            }
+
+            .outcome-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body style="opacity: 1;">
+
+    <!-- Navigation -->
+    <nav class="nav nav-scrolled" style="background: var(--bg-primary); padding: 1rem 5%;">
+        <div class="nav-container">
+
+            <div class="nav-links" style="display: flex; align-items: center;">
+                <a href="index.html#hero">Home</a>
+                <a href="index.html#horizontal">Case Studies</a>
+                <a href="#final">Contact</a>
+            </div>
+            <div class="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section class="case-study-section">
+        <div class="cs-header">
+            <h1 class="cs-title">Case Study 3: Accounting Complexity for HNIs</h1>
+            <p class="cs-subtitle">HNI | Global Accounting & Tax Compliance</p>
+        </div>
+
+        <div class="cs-grid">
+            <!-- Col 1 -->
+            <div class="cs-card">
+                <h2>Client Profile</h2>
+                <ul class="cs-list">
+                    <li>Ultra-High Net Worth Individual (UHNWI)</li>
+                    <li>Global Business Interests across 5+ Jurisdictions</li>
+                    <li>Complex Portfolio including:
+                        <ul class="nested-list">
+                            <li>• Private Equity & Venture Capital</li>
+                            <li>• Cross-border Real Estate Holding</li>
+                            <li>• Digital Assets & Family Trusts</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Col 2 -->
+            <div class="cs-card">
+                <h2>The Problem</h2>
+                <ul class="cs-list" style="margin-top: 1rem;">
+                    <li>Fragmented Accounting across multiple countries</li>
+                    <li>Manual Reconciliation causing 30%+ error rates</li>
+                    <li>Opaque Tax Liabilities due to differing fiscal years</li>
+                    <li>High Administrative burden on the Private Office</li>
+                </ul>
+            </div>
+
+            <!-- Col 3 -->
+            <div class="cs-card">
+                <h2>Msuite Intervention</h2>
+                <ul class="cs-list">
+                    <li>Unified Global Ledger Implementation</li>
+                    <li>Key Features:
+                        <ul class="nested-list">
+                            <li>• Automated Multi-Currency Reconciliation</li>
+                            <li>• AI-Powered Expense Categorization</li>
+                            <li>• Real-time Tax Liability Forecasting</li>
+                        </ul>
+                    </li>
+                    <li>Integrated Compliance Tracking for FATCA/CRS and domestic regulations.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Outcome Section -->
+        <div class="outcome-banner">
+            <div class="outcome-title">Outcome</div>
+            <div class="outcome-grid">
+                <div class="outcome-item">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <p>85% Reduction in Reconciliation Time</p>
+                </div>
+                <div class="outcome-item">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <p>100% Tax & Regulatory Compliance</p>
+                </div>
+                <div class="outcome-item">
+                    <i class="fa-solid fa-eye"></i>
+                    <p>Real-time Visibility into Global Cash flows</p>
+                </div>
+                <div class="outcome-item">
+                    <i class="fa-solid fa-hand-holding-dollar"></i>
+                    <p>Optimized Operational Costs by 40%</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="site-footer" id="final" style="margin-top: 0; padding-top: 4rem;">
+        <div class="footer-container">
+            <!-- Left Column -->
+            <div class="footer-col footer-about">
+                <a href="index.html" class="footer-logo-link">
+                    <img src="assets/msuite white logo.png" alt="Msuite" class="footer-logo">
+                </a>
+                <p>Let us bring structure, visibility, and purpose to your family's wealth — across every generation.
+                </p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><img
+                            src="assets/instagram.jpeg" alt="Instagram"></a>
+                    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><img
+                            src="assets/facebook.jpeg" alt="Facebook"></a>
+                    <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"><img
+                            src="assets/linkedin.jpeg" alt="LinkedIn"></a>
+                    <a href="https://x.com/" target="_blank" rel="noopener noreferrer"><img src="assets/x.jpeg"
+                            alt="X"></a>
+                </div>
+            </div>
+
+            <!-- Middle Column -->
+            <div class="footer-col footer-links">
+                <h4>Platform</h4>
+                <a href="#">MSuite Engine</a>
+                <a href="#">Security Model</a>
+                <a href="#">Case Studies</a>
+                <a href="#">API Docs</a>
+            </div>
+
+            <!-- Right Column -->
+            <div class="footer-col footer-contact">
+                <h4>Contact</h4>
+                <div class="contact-item">
+                    <strong>Email:</strong>
+                    <a href="mailto:info@moatinstitute.in">info@moatinstitute.in</a>
+                </div>
+                <div class="contact-item">
+                    <strong>Phone:</strong>
+                    <a href="tel:+918590144794">+91 8590 144 794</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 MOAT Investments. All rights reserved.</p>
+            <a href="https://www.instagram.com/intellex.web?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                class="dev-link" target="_blank" rel="noopener noreferrer">Meet the Developers <i
+                    class="fa-brands fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <!-- Lenis -->
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+    <script src="script.js?v=40"></script>
+</body>
+
+</html>
