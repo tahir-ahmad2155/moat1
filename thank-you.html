@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You | Moat</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/msuite white logo.png">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Didact+Gothic&display=swap" rel="stylesheet">
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="display: flex; align-items: center; justify-content: center; min-height: 100vh; background: var(--bg-primary); color: white; text-align: center; flex-direction: column; margin: 0; font-family: 'Didact Gothic', sans-serif;">
+    <div class="thank-you-container" style="padding: 4rem 3rem; border: 1px solid var(--text-gold); border-radius: 20px; background: rgba(0,0,0,0.2); max-width: 600px; margin: 0 20px;">
+        <h1 style="color: var(--text-gold); font-size: 4rem; margin-bottom: 1rem; font-family: 'Cormorant Garamond', serif; font-weight: 600;">Thank You!</h1>
+        <p style="font-size: 1.2rem; margin-bottom: 3rem; color: var(--text-secondary); line-height: 1.6;">We have successfully received your message and will get back to you shortly.</p>
+        <a href="index.html" class="submit-btn" style="background: var(--text-gold); color: #000; border: none; border-radius: 50px; padding: 1rem 3rem; font-size: 1.1rem; font-weight: 800; text-decoration: none; text-transform: uppercase; transition: all 0.3s ease; display: inline-block;">Return to Home</a>
+    </div>
+
+    <!-- Small script to apply fade-in effect like the rest of the site -->
+    <script>
+        document.body.style.opacity = "0";
+        document.body.style.transition = "opacity 0.8s ease-out";
+        window.onload = () => {
+             document.body.style.opacity = "1";
+        }
+    </script>
+</body>
+</html>

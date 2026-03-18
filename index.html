@@ -667,6 +667,43 @@
     <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
 
     <script src="script.js?v=40"></script>
+    <script>
+        const contactForm = document.querySelector('.custom-contact-form');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const form = e.target;
+                const data = new FormData(form);
+                const button = form.querySelector('.submit-btn');
+                const originalText = button.innerText;
+                
+                button.innerText = 'SENDING...';
+                button.style.opacity = '0.7';
+                button.disabled = true;
+
+                fetch("https://formsubmit.co/ajax/msuite@moatindia.com", {
+                    method: "POST",
+                    body: data,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                })
+                .then(response => response.json())
+                .then(data => {
+                    window.location.href = "thank-you.html";
+                })
+                .catch(error => {
+                    console.log(error);
+                    button.innerText = 'ERROR! TRY AGAIN';
+                    button.style.opacity = '1';
+                    button.disabled = false;
+                    setTimeout(() => {
+                        button.innerText = originalText;
+                    }, 3000);
+                });
+            });
+        }
+    </script>
 </body>
 
 </html>
