@@ -37,7 +37,7 @@
                 <a href="#challenges">Challenges</a>
                 <a href="#solution">Solution</a>
                 <a href="#horizontal">Case Studies</a>
-                <a href="#final" class="nav-cta">Contact</a>
+                <a href="#contact" class="nav-cta">Contact</a>
             </div>
             <div class="hamburger">
                 <i class="fa-solid fa-bars"></i>
@@ -547,6 +547,55 @@
             </div>
         </div>
     </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-section" id="contact" style="padding: 100px 5%; background: var(--bg-primary);">
+        <div class="container" style="max-width: 800px; margin: 0 auto;">
+            <h2 class="section-title" style="text-align: center; margin-bottom: 3rem; font-size: clamp(2rem, 5vw, 3.5rem); text-transform: uppercase;">
+                Contact <span style="color: var(--text-gold);">Us!</span>
+            </h2>
+            
+            <div class="contact-form-wrapper">
+                <form action="https://formsubmit.co/msuite@moatindia.com" method="POST" class="custom-contact-form">
+                    <!-- Disable Captcha (optional, but good for UX) -->
+                    <input type="hidden" name="_captcha" value="false">
+                    <!-- Success page redirection (optional, keeping default for now) -->
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">FIRST NAME</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">LAST NAME</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">PHONE</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">EMAIL</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group message-group">
+                        <label for="message">MESSAGE</label>
+                        <textarea id="message" name="message" rows="1" required></textarea>
+                    </div>
+                    
+                    <div style="text-align: center;">
+                        <button type="submit" class="submit-btn">SUBMIT</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer Section -->
     <footer class="site-footer" id="final">
         <div class="footer-container">
