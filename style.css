@@ -1147,8 +1147,9 @@ h6 {
 .bg-text {
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 0;
+    width: 100%;
+    text-align: center;
     font-size: clamp(4rem, 15vw, 18rem);
     font-weight: 800;
     color: rgba(167, 118, 65, 0.18);

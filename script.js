@@ -358,7 +358,7 @@ const bgTexts = document.querySelectorAll('.bg-text');
 bgTexts.forEach(bg => {
   // Inform GSAP to treat this element's centering strictly as percentages 
   // to avoid pixel conversion bugs on responsive resize
-  gsap.set(bg, { xPercent: -50, yPercent: -50 });
+  gsap.set(bg, { yPercent: -50 });
 
   // Parallax shift crossing exactly through 0 for perfect centering
   gsap.fromTo(bg,
